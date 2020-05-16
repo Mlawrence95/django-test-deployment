@@ -10,7 +10,8 @@ Here's an attempt at using Heroku:
 4. Make sure `STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` is in `settings.py`
 5. Create `Procfile`. This will look like `web: python manage.py runserver`
 6. commit + push all changes, then `git push heroku master`
-7. Create an instance of this app with `heroku ps:scale web=1`
+7. Verify locally. `python manage.py collectstatic`. Make sure "*.herokuapp.com" is in settings/ALLOWED_HOSTS
+8. Create an instance of this app with `heroku ps:scale web=1`
 
 ### Setting up GitHub
 First, make a dedicated repository for the deployment.
