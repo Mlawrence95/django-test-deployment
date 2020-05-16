@@ -25,6 +25,7 @@ Here's an attempt at using Heroku:
   - `STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'`
 - get heroku server name and add it to `settings.py` like
 `ALLOWED_HOSTS = ["obscure-everglades-57275.herokuapp.com"]`
+- turn OFF `debug`
 - commit + push all changes, then `git push heroku master`
 - Verify locally. `python manage.py collectstatic; heroku local`.
 - Create an instance of this app with `heroku ps:scale web=1`
