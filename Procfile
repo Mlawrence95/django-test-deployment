@@ -1,1 +1,1 @@
-web: boilerplate_django.wsgi --log-file -
+web: gunicorn boilerplate_django.wsgi --log-file -
