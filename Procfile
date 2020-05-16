@@ -1,2 +1,1 @@
- python test-project/manage.py runserver
- 
+web: boilerplate_django.wsgi --log-file -
