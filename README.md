@@ -3,7 +3,7 @@
 Options include `elastic beanstalk`, `heroku`, `python anywhere`,
 `digital ocean`, and more.
 
-NOTE: the following exposes keys to public. This is not acceptable for anything that isn't a toy.
+NOTE: the following exposes keys to public. This is not acceptable for anything that isn't a toy. Ensure that your Heroku dashboard is configured to have this all occur in your staging environment (it was the default for me, but you can never be too cautious).
 
 
 Here's an attempt at using Heroku:
@@ -23,5 +23,5 @@ Here's an attempt at using Heroku:
 - run commands like `heroku run python manage.py createsuperuser`
 
 
-CSS will be broken for `admin`, as well as anything
+Future work: CSS is broken for `admin`, as well as anything
 that depends on `static/`. Not sure how to resolve for now.
