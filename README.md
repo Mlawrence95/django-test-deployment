@@ -17,12 +17,11 @@ Here's an attempt at using Heroku:
 - Use [whitenoise config](https://devcenter.heroku.com/articles/django-assets) to add support for static files in deployment. This simply means adding the following to `settings.py`:
   - ```python
   MIDDLEWARE_CLASSES = (
-    # Simplified static file serving.
-    # https://warehouse.python.org/project/whitenoise/
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     ...
+    )
     ```
-  - `STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'`
+  - `STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'`
 - get heroku server name and add it to `settings.py` like
 `ALLOWED_HOSTS = ["obscure-everglades-57275.herokuapp.com"]`
 - turn OFF `debug`
